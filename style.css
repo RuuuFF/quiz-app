@@ -20,7 +20,8 @@ body {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
-  width: 600px;
+  width: 90%;
+  max-width: 600px;
   overflow: hidden;
 }
 
@@ -29,7 +30,7 @@ body {
 }
 
 h2 {
-  padding: 1rem;
+  padding: 1rem 0;
   text-align: center;
   margin: 0;
 }
@@ -67,4 +68,25 @@ button:hover {
 button:focus {
   outline: none;
   background-color: #5e3370;
+}
+
+@media (max-width: 740px) {
+  .quiz-header {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  ul li {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
 }
